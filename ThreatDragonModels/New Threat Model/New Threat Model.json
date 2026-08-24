@@ -82,6 +82,154 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Authorized API Request",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Authorized API Request"
+            ],
+            "id": "8705aac2-4509-4712-b763-93711bb33ced",
+            "source": {
+              "x": 1000,
+              "y": 198
+            },
+            "target": {
+              "cell": "0e1e28ff-524d-4d57-b97a-7c8e3044d02a",
+              "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "LLM Request + API Key",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "e98e7777-3a0e-481e-b061-b8f77a10ace8"
+              ]
+            },
+            "labels": [
+              "LLM Request + API Key"
+            ],
+            "id": "7dd22c03-7e6c-4511-b004-16b41e519bf3",
+            "source": {
+              "x": 750,
+              "y": 30
+            },
+            "target": {
+              "x": 380,
+              "y": 250
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "RAG Query",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "RAG Query"
+            ],
+            "id": "f03be8e8-a1b5-4f5f-b65c-7a92202b6c5f",
+            "source": {
+              "x": 360,
+              "y": 270
+            },
+            "target": {
+              "cell": "eda7092c-baf1-416f-b717-d1fe5971c38b",
+              "port": "32b3cf9f-2fda-4107-b14f-969f56eb28bc"
+            },
+            "vertices": [
+              {
+                "x": 430,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Service Authentication",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Service Authentication"
+            ],
+            "id": "ad8795ea-8bdb-4089-a868-94fdcac8a518",
+            "source": {
+              "x": 420,
+              "y": 442
+            },
+            "target": {
+              "cell": "573aebf0-2310-4ede-8e06-78139c206550",
+              "port": "765807a3-a6a3-4386-977d-e1386e21b6f2"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Tool Request",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Tool Request"
+            ],
+            "id": "6a43007c-f550-4be3-949d-9b16b1eb961f",
+            "source": {
+              "x": 270,
+              "y": 410
+            },
+            "target": {
+              "cell": "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
+              "port": "765807a3-a6a3-4386-977d-e1386e21b6f2"
+            }
+          },
+          {
             "position": {
               "x": 160,
               "y": 70
@@ -443,8 +591,8 @@
           },
           {
             "position": {
-              "x": 920,
-              "y": 170
+              "x": 940,
+              "y": 180
             },
             "size": {
               "width": 60,
@@ -563,8 +711,8 @@
           },
           {
             "position": {
-              "x": 1074,
-              "y": 170
+              "x": 1270,
+              "y": 180
             },
             "size": {
               "width": 60,
@@ -1163,8 +1311,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 456
+              "x": 610,
+              "y": 490
             },
             "size": {
               "width": 60,
