@@ -431,6 +431,36 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "User Authentication",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d"
+              ]
+            },
+            "labels": [
+              "User Authentication"
+            ],
+            "id": "cd166f9c-74a1-46c3-8569-91b9908744c8",
+            "source": {
+              "x": 220,
+              "y": 100
+            },
+            "target": {
+              "cell": "87a1eed7-3ecd-4490-a92d-d0fb9fb4de7f",
+              "port": "ea90b572-20d9-4d2b-9a4c-f63aad9248c6"
+            }
+          },
+          {
             "position": {
               "x": 160,
               "y": 70
