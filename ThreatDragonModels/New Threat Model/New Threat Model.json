@@ -20,9 +20,71 @@
         "version": "2.6.2",
         "cells": [
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "User Request",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "User Request"
+            ],
+            "id": "55045903-37cc-4cda-8791-c9397f009b19",
+            "source": {
+              "x": 220,
+              "y": 130
+            },
+            "target": {
+              "x": 320,
+              "y": 230
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "OAuth 2.0 Client Credentials",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "OAuth 2.0 Client Credentials"
+            ],
+            "id": "396ef19c-b7aa-4d3e-a130-ac290cec6721",
+            "source": {
+              "x": 400,
+              "y": 230
+            },
+            "target": {
+              "cell": "a1315357-631c-4b42-868f-d8a27b9637b7",
+              "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
+            }
+          },
+          {
             "position": {
-              "x": 1590,
-              "y": -580
+              "x": 160,
+              "y": 70
             },
             "size": {
               "width": 60,
@@ -40,6 +102,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +186,6 @@
               ]
             },
             "id": "488684c0-b4b8-4123-b352-16e4b97d0012",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Human_user",
@@ -141,7 +203,7 @@
           },
           {
             "position": {
-              "x": 360,
+              "x": 340,
               "y": 210
             },
             "size": {
@@ -160,6 +222,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +306,6 @@
               ]
             },
             "id": "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "AI Agent",
@@ -261,7 +323,7 @@
           },
           {
             "position": {
-              "x": 598,
+              "x": 658,
               "y": 210
             },
             "size": {
@@ -280,6 +342,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -363,7 +426,6 @@
               ]
             },
             "id": "a1315357-631c-4b42-868f-d8a27b9637b7",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "OAuth M2M Client",
@@ -381,7 +443,7 @@
           },
           {
             "position": {
-              "x": 880,
+              "x": 920,
               "y": 170
             },
             "size": {
@@ -400,6 +462,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -483,7 +546,6 @@
               ]
             },
             "id": "e5122e27-23a4-4632-8c73-dc8c802dca69",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "REST API",
@@ -520,6 +582,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -603,7 +666,6 @@
               ]
             },
             "id": "0e1e28ff-524d-4d57-b97a-7c8e3044d02a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Internal AI/Data Services",
@@ -640,6 +702,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -723,7 +786,6 @@
               ]
             },
             "id": "0c72d39e-5324-4ad6-a467-e34eef09b6c7",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "LLM Provider",
@@ -760,6 +822,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -843,7 +906,6 @@
               ]
             },
             "id": "eda7092c-baf1-416f-b717-d1fe5971c38b",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "RAG Pipeline",
@@ -880,6 +942,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -963,7 +1026,6 @@
               ]
             },
             "id": "f779f87c-daf0-406c-b1d3-301c7c812d4d",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "MCP Server",
@@ -1000,6 +1062,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1083,7 +1146,6 @@
               ]
             },
             "id": "e98e7777-3a0e-481e-b061-b8f77a10ace8",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "LLM API Key",
@@ -1120,6 +1182,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1203,7 +1266,6 @@
               ]
             },
             "id": "573aebf0-2310-4ede-8e06-78139c206550",
-            "zIndex": 10,
             "data": {
               "type": "tm.Process",
               "name": "RAG Pipeline Service Identity",
@@ -1240,6 +1302,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1323,7 +1386,6 @@
               ]
             },
             "id": "df9bfc87-8238-4559-9fa4-00f99374ddcb",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "MCP Server Identity",
@@ -1338,6 +1400,35 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Access Token + API Request",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Access Token + API Request"
+            ],
+            "id": "889d9129-71e2-4b01-8d61-d87eb7554f81",
+            "source": {
+              "x": 758,
+              "y": 230
+            },
+            "target": {
+              "cell": "e5122e27-23a4-4632-8c73-dc8c802dca69",
+              "port": "32b3cf9f-2fda-4107-b14f-969f56eb28bc"
+            },
+            "vertices": []
           }
         ]
       }
