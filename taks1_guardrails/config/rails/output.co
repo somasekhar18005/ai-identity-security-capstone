@@ -1,0 +1,18 @@
+define bot refuse project3 attack
+  "BLOCKED: The response was blocked because it matched a known Project 3 attack pattern."
+
+define flow block project3 attacks
+  $is_attack = execute detect_project3_attack
+
+  if $is_attack
+    bot refuse project3 attack
+    stop
+
+
+define flow redact jwt output
+  $redacted_message = execute redact_jwt_output
+
+  if $redacted_message != $bot_message
+    $bot_message = $redacted_message
+    bot $bot_message
+    stop

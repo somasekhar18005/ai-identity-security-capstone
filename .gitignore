@@ -1,0 +1,16 @@
+﻿taks1_guardrails/.venv/
+taks1_guardrails/DLLs/
+taks1_guardrails/include/
+taks1_guardrails/Lib/
+taks1_guardrails/libs/
+taks1_guardrails/Scripts/
+taks1_guardrails/tcl/
+taks1_guardrails/Doc/
+taks1_guardrails/*.dll
+taks1_guardrails/*.exe
+taks1_guardrails/__pycache__/
+taks1_guardrails/*/__pycache__/
+taks1_guardrails/*/*/__pycache__/
+taks1_guardrails/refresh_token.txt
+taks1_guardrails/LICENSE.txt
+taks1_guardrails/NEWS.txt

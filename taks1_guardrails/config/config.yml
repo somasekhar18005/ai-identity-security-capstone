@@ -1,0 +1,7 @@
+colang_version: "1.0"
+
+rails:
+  output:
+    flows:
+      - block project3 attacks
+      - redact jwt output

@@ -1,0 +1,9 @@
+define flow block project3 attacks
+    $is_attack = execute detect_project3_attack
+    if $is_attack
+        execute block_project3_attack
+        stop
+
+define flow redact jwt output
+    $redacted_response = execute redact_jwt_output
+    return $redacted_response
