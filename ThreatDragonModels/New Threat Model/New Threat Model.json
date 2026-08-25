@@ -79,8 +79,8 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": -525
+              "x": 108,
+              "y": 165
             },
             "size": {
               "width": 550,
@@ -101,8 +101,20 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "97d97bfd-01f9-4ad8-8edb-0c6dbbd10e9d",
+                "927754c5-655d-48bd-81c6-8b4ebe5cd015",
+                "dd42351d-2498-4003-b6cc-b750908f02bb",
+                "cf4355b2-2a59-4678-b652-48a451df5829",
+                "677f5cd9-33df-4105-960a-a3188b6c1a7e"
+              ],
+              "containedElements": [
+                "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
+                "eda7092c-baf1-416f-b717-d1fe5971c38b",
+                "f779f87c-daf0-406c-b1d3-301c7c812d4d",
+                "573aebf0-2310-4ede-8e06-78139c206550",
+                "df9bfc87-8238-4559-9fa4-00f99374ddcb"
+              ]
             }
           },
           {
@@ -138,12 +150,19 @@
               "containedElements": [
                 "87a1eed7-3ecd-4490-a92d-d0fb9fb4de7f"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
-              "x": 300,
-              "y": 140
+              "x": 290,
+              "y": 165
             },
             "size": {
               "width": 70,
@@ -622,8 +641,8 @@
           },
           {
             "position": {
-              "x": 1110,
-              "y": -170
+              "x": 980,
+              "y": -40
             },
             "size": {
               "width": 60,
@@ -1102,8 +1121,8 @@
           },
           {
             "position": {
-              "x": 610,
-              "y": 490
+              "x": 580,
+              "y": 480
             },
             "size": {
               "width": 60,
@@ -1391,7 +1410,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79"
+              ]
             },
             "labels": [
               "Data Flow"
@@ -1484,6 +1505,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79",
                 "97566203-ecc8-4862-92a4-67001157efd7"
               ]
             },
@@ -1505,6 +1527,115 @@
                 "y": 260
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "LLM Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79"
+              ]
+            },
+            "labels": [
+              "LLM Response"
+            ],
+            "id": "dd42351d-2498-4003-b6cc-b750908f02bb",
+            "source": {
+              "cell": "0c72d39e-5324-4ad6-a467-e34eef09b6c7",
+              "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
+            },
+            "target": {
+              "cell": "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
+              "port": "32b3cf9f-2fda-4107-b14f-969f56eb28bc"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": 120
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1942,7 +2073,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79"
+              ]
             },
             "labels": [
               "Service Authentication"
@@ -2088,7 +2221,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79"
+              ]
             },
             "labels": [
               "User Request"
@@ -2279,7 +2414,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "LLM API Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2293,7 +2428,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "LLM API Request"
             ],
             "id": "5c8aae34-ebbf-4999-98bd-f258c127b8f8",
             "source": {
@@ -2305,6 +2440,10 @@
               "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
             },
             "vertices": [
+              {
+                "x": 390,
+                "y": 290
+              },
               {
                 "x": 430,
                 "y": 290
@@ -2361,10 +2500,6 @@
               "port": "32b3cf9f-2fda-4107-b14f-969f56eb28bc"
             },
             "vertices": [
-              {
-                "x": 335,
-                "y": 255
-              },
               {
                 "x": 335,
                 "y": 280
