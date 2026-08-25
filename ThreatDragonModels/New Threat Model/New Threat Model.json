@@ -150,13 +150,6 @@
               "containedElements": [
                 "87a1eed7-3ecd-4490-a92d-d0fb9fb4de7f"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -413,8 +406,8 @@
                 "text": "REST API"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -511,12 +504,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "539a96d2-f8e0-4187-867c-81088df151f5",
+                  "title": "Missing JWT Scope Enforcement",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "REST API validates token signature but fails to check granular OAuth scopes, allowing standard clients to execute admin endpoints.",
+                  "mitigation": "Enforce centralized route-level middleware to validate required scopes (e.g., read:data, admin:write) against the decoded JWT claims",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -530,7 +545,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Internal AI/Data Services"
+                "text": "Internal AI Services"
               },
               "body": {
                 "stroke": "#333333",
@@ -626,7 +641,7 @@
             "id": "0e1e28ff-524d-4d57-b97a-7c8e3044d02a",
             "data": {
               "type": "tm.Process",
-              "name": "Internal AI/Data Services",
+              "name": "Internal AI Services",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -641,8 +656,8 @@
           },
           {
             "position": {
-              "x": 980,
-              "y": -40
+              "x": 910,
+              "y": -50
             },
             "size": {
               "width": 60,
@@ -1580,62 +1595,7 @@
                 "x": 570,
                 "y": 120
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -1923,6 +1883,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2511,6 +2478,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "sekhar",
-    "threatTop": 3
+    "threatTop": 7
   }
 }
