@@ -145,7 +145,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Tool Request",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -153,12 +153,12 @@
               "containedElements": []
             },
             "labels": [
-              "Tool Request"
+              ""
             ],
             "id": "6a43007c-f550-4be3-949d-9b16b1eb961f",
             "source": {
               "x": 270,
-              "y": 410
+              "y": 370
             },
             "target": {
               "cell": "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
@@ -370,8 +370,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "6b43f53c-2284-4571-b15a-d1734b1dd310",
             "zIndex": -1,
+            "id": "6b43f53c-2284-4571-b15a-d1734b1dd310",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "User Level",
@@ -386,7 +386,7 @@
           },
           {
             "position": {
-              "x": 225,
+              "x": 230,
               "y": 200
             },
             "size": {
@@ -400,55 +400,30 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79",
             "zIndex": -1,
+            "id": "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Agent Layer",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "cf4355b2-2a59-4678-b652-48a451df5829"
+              ],
               "containedElements": [
                 "6f7551db-52d3-4a4d-9a20-c4c1f197cc9d",
                 "eda7092c-baf1-416f-b717-d1fe5971c38b",
                 "f779f87c-daf0-406c-b1d3-301c7c812d4d"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Service Authentication",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Service Authentication"
-            ],
-            "id": "e66628c8-dc0e-44b2-b1f9-0110e4fd2f50",
-            "source": {
-              "cell": "df9bfc87-8238-4559-9fa4-00f99374ddcb",
-              "port": "765807a3-a6a3-4386-977d-e1386e21b6f2"
-            },
-            "target": {
-              "cell": "f779f87c-daf0-406c-b1d3-301c7c812d4d",
-              "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
-            },
-            "vertices": [
-              {
-                "x": 160,
-                "y": 420
-              }
-            ]
           },
           {
             "position": {
@@ -932,8 +907,8 @@
           },
           {
             "position": {
-              "x": 990,
-              "y": -40
+              "x": 1110,
+              "y": -170
             },
             "size": {
               "width": 60,
@@ -1868,6 +1843,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1951,7 +1927,6 @@
               ]
             },
             "id": "22cb7e44-9802-4544-bc11-f4983a1801f4",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Human_User",
@@ -1965,173 +1940,51 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 15,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "LLM Request + API Key",
+              "type": "tm.Flow",
+              "name": "Service Authentication",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": [
-                "e98e7777-3a0e-481e-b061-b8f77a10ace8"
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "63b66bb8-fd52-4e67-9dd1-80afd6c6ba79"
               ]
             },
             "labels": [
-              "LLM Request + API Key"
+              "Service Authentication"
             ],
-            "id": "7dd22c03-7e6c-4511-b004-16b41e519bf3",
+            "id": "cf4355b2-2a59-4678-b652-48a451df5829",
             "source": {
-              "x": 750,
-              "y": 30
+              "x": 170,
+              "y": 320
             },
             "target": {
-              "x": 380,
-              "y": 250
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+              "cell": "f779f87c-daf0-406c-b1d3-301c7c812d4d",
+              "port": "8df08ffe-40ad-4d49-b379-0c7586b9c6cf"
             }
           }
         ]
